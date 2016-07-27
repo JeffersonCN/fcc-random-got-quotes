@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FreeCodeCamp - Random Quotes</title>
+    <!-- Meta for responsive layout -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Import Font Awesome Icons-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1 id="title" class="fade-in delay-1">Game of Thrones Quotes</h1>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- Container for Quote paragraph and Character name -->
+        <div id="quote-container">
+            <p class="fade-in delay-1half">
+                <span><i class="fa fa-quote-left fa-pull-left" aria-hidden="true"></i></span>
+                <!-- This span receives the quote -->
+                <span id="quote"></span>
+            </p>
+            <!-- This span receives character name -->
+            <span id="character" class="fade-in delay-2"></span>
+            <div style="clear: both;"></div>​
+        </div>
+        <!-- Container for Tweet button and New Quote button-->
+        <div id="controls" class="fade-in delay-2half">
+            <button id="share" class="shadow"><i class="fa fa-twitter" aria-hidden="true"></i> TWEET</button>
+            <button id="new-quote" class="shadow"><i class="fa fa-refresh" aria-hidden="true"></i> NEW QUOTE</button>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div id="made-with" class="fade-in delay-1">
+            <span>Made with <i class="fa fa-heart"></i> by <a href="http://jeffersoncn.github.com" target="_blank">jeffersoncn</a></span>
+        </div>
+    </footer>
+    <!-- Import jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Import Axios HTTP Client -->
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+    <!-- App -->
+    <script src="app.js"></script>
+</body>
+
+</html>

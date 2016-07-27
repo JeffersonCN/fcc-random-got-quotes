@@ -1,0 +1,321 @@
+@import 'https://fonts.googleapis.com/css?family=Cinzel';
+
+/* font-family: 'Cinzel', serif; */
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #111;
+    color: #fff;
+    box-sizing: border-box;
+    animation: fadeBackground 10s infinite;
+    padding: 20px 20px;
+}
+
+/* HEADER */
+
+#title {
+    font-weight: 900;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 5px auto;
+}
+
+
+/* MAIN */
+
+main {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#quote-container {
+    padding: 5px 10px;
+    /* Vertical align */
+    margin: auto auto;
+    display: table;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#quote {
+    font-weight: 400;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+#character {
+    font-weight: 700;
+    font-size: 1.4em;
+    float: right;
+    text-align: right;
+}
+
+
+/* CONTROLS */
+
+button {
+    padding: 10px 15px;
+    margin: 0px auto;
+    border: 0 none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover,
+button:focus {
+    font-weight: 900;
+}
+
+#controls {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    margin: 10px 10px;
+}
+
+#new-quote {
+    color: #fff;
+    background-color: #555;
+}
+
+#share {
+    background-color: #1b95e0;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#made-with {
+    font-size: 0.8em;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#made-with a {
+    color: #fff;
+}
+
+.fa-heart {
+    font-size: 0.8em;
+    color: #f22;
+}
+
+
+/* EFFECTS */
+
+.shadow {
+    -webkit-box-shadobw: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes fadeBackground {
+    0% {
+        background-color: #111;
+    }
+    50% {
+        background-color: #333;
+    }
+    100% {
+        background-color: #111;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+.delay-1 {
+    animation-delay: 1s
+}
+
+.delay-1half {
+    animation-delay: 1.5s
+}
+
+.delay-2 {
+    animation-delay: 2s
+}
+
+.delay-2half {
+    animation-delay: 2.5s
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 360px) and (orientation: portrait) {
+    #quote {
+        font-size: 1.4em;
+    }
+    #character {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 435px) and (orientation: portrait) {
+    #title {
+        font-size: 2em;
+    }
+    #quote {
+        font-size: 1.6em;
+    }
+    #character {
+        font-size: 1.7em;
+    }
+    #made-with {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    #title {
+        font-size: 2.5em;
+    }
+    #quote-container {
+        padding: 5px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #controls {
+        bottom: 115px;
+        margin: 10px 30px;
+    }
+
+    button {
+        padding: 18px 27px;
+        font-size: 1em;
+    }
+
+    #made-with {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 320px) and (orientation: landscape) {
+    #title {
+        font-size: 1em;
+    }
+    #quote-container {
+        padding: 5px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #quote {
+        font-size: 1em;
+    }
+    #character {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 1em 1.5em;
+        font-size: 0.7em;
+    }
+
+}
+
+@media only screen and (min-width: 360px) and (orientation: landscape) {
+    #title {
+        font-size: 1.5em;
+    }
+    #quote {
+        font-size: 1.1em;
+    }
+    #character {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 435px) and (orientation: landscape) {
+    #quote {
+        font-size: 1.2em;
+    }
+    #character {
+        font-size: 1.2em;
+    }
+    #controls {
+        margin: 10px 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    #title {
+        font-size: 2em;
+    }
+    #quote-container {
+        padding: 5px 100px;
+    }
+    #quote {
+        font-size: 1.5em;
+    }
+    #character {
+        font-size: 1.7em;
+    }
+    #controls {
+        margin: 10px 100px;
+        bottom: 100px;
+    }
+    button {
+        padding: 1.2em 1.8em;
+        font-size: 0.9em;
+    }
+    #made-with {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    #title {
+        font-size: 2.4em;
+    }
+    #quote-container {
+        padding: 5px 200px;
+    }
+    #quote {
+        font-size: 1.8em;
+    }
+    #character {
+        font-size: 1.9em;
+    }
+    #controls {
+        margin: 10px 200px;
+    }
+    button {
+        padding: 1.1em 1.6em;
+        font-size: 0.8em;
+    }
+}
