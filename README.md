@@ -1,2 +1,2 @@
-# fcc-random-got-quotes
-Game of Thrones random quotes generator
+# Random Game of Thrones Quotes generator
+Using the got-quotes API: https://github.com/wsizoo/game-of-thrones-quotes
